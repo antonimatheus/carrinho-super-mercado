@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho do Super Mercado</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Carrinho do Super Mercado</h1>
+    </header>
+    <main>
+        <section>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Compras</legend>
+                    <p>
+                        <label for="iproduto">Produto:</label>
+                        <input type="text" name="produto" id="iproduto" list="mercadorias" placeholder="Arroz" required>
+                        <datalist id="mercadorias">
+                            <select>
+                                <option>Arroz</option>
+                                <option>Azeite</option>
+                                <option>Bolachas e biscoitos</option>
+                                <option>Café</option>
+                                <option>Chá</option>
+                                <option>Atum</option>
+                                <option>Sardinha</option>
+                                <option>Milho</option>
+                                <option>Ervilha</option>
+                                <option>Extrato de tomate</option>
+                                <option>Farinhas e farofas</option>
+                                <option>Feijão</option>
+                                <option>Leite</option>
+                                <option>Macarrão</option>
+                                <option>Maionese</option>
+                                <option>Óleo</option>
+                                <option>Tempero pronto</option>
+                                <option>Batata palito</option>
+                                <option>Frango</option>
+                                <option>Hambúrguer</option>
+                                <option>Lasanha</option>
+                                <option>Linguiça</option>
+                                <option>Pão de queijo</option>
+                                <option>Petiscos</option>
+                                <option>Pizza</option>
+                                <option>Pratos prontos</option>
+                                <option>Produtos para churrasco</option>
+                                <option>Salsicha e salsichão</option>
+                                <option>Vegetais</option>
+                                <option>Apresuntado</option>
+                                <option>Iogurtes</option>
+                                <option>Leite fermentado</option>
+                                <option>Manteiga</option>
+                                <option>Margarina</option>
+                                <option>Mortadela</option>
+                                <option>Peito de peru</option>
+                                <option>Presunto</option>
+                                <option>Queijo</option>
+                                <option>Requeijão</option>
+                                <option>Salame</option>
+                                <option>Banana</option>
+                                <option>Abacate</option>
+                                <option>Melancia</option>
+                                <option>Abacaxi</option>
+                                <option>Mamão</option>
+                                <option>Manga</option>
+                                <option>Maçã</option>
+                                <option>Batata</option>
+                                <option>Cenoura</option>
+                                <option>Tomate</option>
+                                <option>Pimentão</option>
+                                <option>Beterraba</option>
+                                <option>Pepino</option>
+                                <option>Polpas de frutas congeladas</option>
+                                <option>Temperos</option>
+                                <option>Alho</option>
+                                <option>Cebola</option>
+                                <option>Cebolinha</option>
+                                <option>Salsa</option>
+                                <option>Coentro</option>
+                                <option>Couve</option>
+                                <option>Alface</option>
+                                <option>Rúcula</option>
+                                <option>Couve-flor</option>
+                                <option>Repolho</option>
+                                <option>Achocolatados</option>
+                                <option>Água</option>
+                                <option>Cervejas</option>
+                                <option>Energéticos</option>
+                                <option>Refrigerantes</option>
+                                <option>Sucos</option>
+                                <option>Vinhos</option>
+                                <option>Vitaminas</option>
+                                <option>Vodka</option>
+                                <option>Biscoitos</option>
+                                <option>Bisnaguinha</option>
+                                <option>Broinha de milho</option>
+                                <option>Pães de queijo</option>
+                                <option>Pão de cachorro-quente</option>
+                                <option>Pão de forma</option>
+                                <option>Pão de hambúrguer</option>
+                                <option>Absorvente</option>
+                                <option>Algodão</option>
+                                <option>Condicionador</option>
+                                <option>Cotonete</option>
+                                <option>Escova de dentes</option>
+                                <option>Hidratantes</option>
+                                <option>Lâmina de barbear</option>
+                                <option>Papel higiênico</option>
+                                <option>Pasta de dente</option>
+                                <option>Sabonetes</option>
+                                <option>Shampoo</option>
+                                <option>Água sanitária</option>
+                                <option>Alvejante</option>
+                                <option>Amaciante</option>
+                                <option>Desinfetante</option>
+                                <option>Detergente</option>
+                                <option>Escovinhas</option>
+                                <option>Esponja de aço</option>
+                                <option>Luvas de borracha</option>
+                                <option>Pá</option>
+                                <option>Pano de chão</option>
+                                <option>Pano de prato</option>
+                                <option>Rodo</option>
+                                <option>Sabão em barra</option>
+                                <option>Sabão em pó</option>
+                                <option>Vassoura</option>
+                            </select>
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="iquantidade">Quantidade:</label>
+                        <input type="number" name="quantidade" id="iquantidade" value="1" required>
+                    </p>
+                    <p>
+                        <label for="ipreço">Preço: R$</label>
+                        <input type="number" name="preço" id="ipreço" placeholder="00.00" required>
+                    </p>
+                    <p>
+                        <input type="button" value="Enviar" onclick="enviar()">
+                    </p>
+                </fieldset>
+            </form>
+
+        </section>
+        <section>
+            <fieldset>
+                <legend>Carrinho</legend>
+                <div id="res">
+                </div>
+                <output id="tot"></output>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        @antoniimatheus
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
