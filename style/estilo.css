@@ -1,5 +1,97 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: rgb(99, 163, 184);
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgba(65, 65, 177, 0.671), rgba(0, 183, 255, 0.726));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1 {
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+    font-size: 4.5vw;
+}
+
+fieldset > legend {
+    color: rgb(0, 113, 179);
+    font-weight: bold;
+}
+fieldset {
+    display: inline block;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.534);
+}
+
+#fild1 {
+    height: 180px;
+    margin-top: 10px;
+}
+
+#fild2 {
+    height: 45vh;
+    margin-top: 10px ;
+}
+
+fieldset > p {
+    color: white;
+    padding: 5px;
+
+}
+#res {
+    margin: 0 auto;
+    color: white;
+    height: 30vh;
+    padding: 10px;
+    
+}
+
+#tot {
+    display: inline-block;
+    outline: 1px solid rgba(2, 47, 170, 0.534);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+input {
+    color: rgb(0, 113, 179);
+    display: inline-block;
+    width: 140px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#button {
+    border: none;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 90px;
+    color: white;
+    background-color: rgb(5, 102, 134);
+}
+
+#button:hover {
+    transition: 0.4s;
+    background-color: rgb(6, 181, 240);
+    color: rgb(5, 102, 134);
+    font-weight: bold;
+}
+
+footer > p {
+    color: rgb(0, 113, 179);
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
 }

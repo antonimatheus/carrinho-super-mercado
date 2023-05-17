@@ -14,7 +14,7 @@
     <main>
         <section>
             <form action="#" method="post">
-                <fieldset>
+                <fieldset id="fild1">
                     <legend>Compras</legend>
                     <p>
                         <label for="iproduto">Produto:</label>
@@ -140,14 +140,14 @@
                         <input type="number" name="preço" id="ipreço" placeholder="00.00" required>
                     </p>
                     <p>
-                        <input type="button" value="Enviar" onclick="enviar()">
+                        <input type="button" value="Enviar" onclick="enviar()" id="button">
                     </p>
                 </fieldset>
             </form>
 
         </section>
         <section>
-            <fieldset>
+            <fieldset id="fild2">
                 <legend>Carrinho</legend>
                 <div id="res">
                 </div>
@@ -156,7 +156,7 @@
         </section>
     </main>
     <footer>
-        @antoniimatheus
+        <p>@antoniimatheus</p>
     </footer>
     <script src="script.js"></script>
 </body>

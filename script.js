@@ -31,10 +31,10 @@ function enviar() {
         }
 
         // Exibe o produto e o total na caixa de resultados
-        res.innerHTML += `${quant} ${produto.value} R$${mult}<br>`;
+        res.innerHTML += `${quant} ${produto.value} R$${mult.toFixed(2)}<br>`;
 
         // Atualiza o total acumulado
         total += mult;
-        tot.innerHTML = `Total: R$${total}<br>`;
+        tot.innerHTML = `Total: R$ ${total.toFixed(2)}<br>`;
     }
 }
