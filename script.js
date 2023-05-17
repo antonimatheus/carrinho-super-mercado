@@ -17,18 +17,7 @@ function enviar() {
         // Converte os valores para números
         let quant = Number(quantidade.value); // Valor da quantidade convertido para número
         let preç = Number(preço.value); // Valor do preço convertido para número
-        let c = quant; // Armazena a quantidade em uma variável temporária
-        let mult = 0; // Variável para armazenar o total do produto atual
-
-        // Calcula o total do produto atual
-        if (c > 1) {
-            while (c > 1) {
-                mult += c * preç; // Multiplica a quantidade pelo preço e adiciona ao total do produto
-                c--; // Decrementa a quantidade em 1
-            }
-        } else {
-            mult = preç; // Se a quantidade for igual a 1, o total é igual ao preço
-        }
+        let mult = preç * quant; // Calcula o total do produto atual
 
         // Exibe o produto e o total na caixa de resultados
         res.innerHTML += `${quant} ${produto.value} R$${mult.toFixed(2)}<br>`;
