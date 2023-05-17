@@ -32,12 +32,14 @@ fieldset {
 }
 
 #fild1 {
-    height: 180px;
+    height: 23vh;
+    width: 75vw;
     margin-top: 10px;
 }
 
 #fild2 {
     height: 45vh;
+    width: 75vw;
     margin-top: 10px ;
 }
 
