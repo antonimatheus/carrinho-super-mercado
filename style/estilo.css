@@ -27,10 +27,19 @@ header > h1 {
     font-size: 4.5vw;
 }
 
+label {
+    transition: .5s;
+}
+
+label:hover {
+    color:var(--cor4);
+}
+
 fieldset > legend {
     color: var(--cor1);
     font-weight: bold;
 }
+
 fieldset {
     display: inline block;
     width: 50%;
@@ -91,10 +100,11 @@ input {
     width: 90px;
     color: white;
     background-color: var(--cor2);
+    transition: .5s;
 }
 
 #button:hover {
-    transition: 0.4s;
+    
     background-color: var(--cor3);
     color: var(--cor2);
     font-weight: bold;
