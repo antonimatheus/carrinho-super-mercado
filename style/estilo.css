@@ -10,6 +10,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden ;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 
 header > h1 {
     color: var(--cor1);
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, .5);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     padding-top: 15px;
     text-align: center;
     font-size: 35px;
@@ -49,7 +50,7 @@ fieldset {
     margin: 0 auto;
     border-radius: 10px;
     border-color: var(--cor2);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 #fild1 {
@@ -95,12 +96,13 @@ fieldset > p {
 }
 
 input {
-    border: none;
-    color: var(--cor2);
     display: inline-block;
     width: 140px;
-    border-radius: 5px;
     text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--cor2);
 }
 
 #button {
@@ -117,22 +119,4 @@ input {
 #button:hover {
     background-color: var(--cor2);
     color: white;
-    
-}
-
-footer > p {
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, .5);
-    margin-top: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-footer > p > a {
-    text-decoration: none;
-    color: var(--cor1);
-    transition: .4s;
-}
-
-footer > p > a:hover {
-    color: var(--cor2);
 }
